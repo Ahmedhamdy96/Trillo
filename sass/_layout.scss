@@ -1,0 +1,139 @@
+/* ===================================
+   =====[ Container ]=================
+   ===================================
+*/
+
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+
+  @media only screen and (max-width: $bp-largest) {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    min-height: 100vh;
+  }
+
+  background-color: var(--color-grey-light-2);
+  box-shadow: var(--shadow-dark);
+}
+
+/* ===================================
+   =====[ Header ]====================
+   ===================================
+*/
+
+.header {
+  height: 7rem;
+  background-color: var(--color-white);
+  border-bottom: var(--line);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+
+  @media only screen and (max-width: $bp-very-small) {
+    flex-wrap: wrap;
+    height: 12rem;
+    align-content: space-around;
+  }
+}
+/* ===================================
+   =====[ Content ]===================
+   ===================================
+*/
+
+.content {
+  display: flex;
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column;
+  }
+}
+
+/* ===================================
+   =====[ Sidebar ]===================
+   ===================================
+*/
+
+.sidebar {
+  background-color: var(--color-grey-dark-1);
+
+  // grow | shrink | basis
+  flex: 0 0 20%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ===================================
+   =====[ Hotel View ]================
+   ===================================
+*/
+
+.hotel-view {
+  flex: 1;
+  background-color: var(--color-white);
+}
+
+/* ===================================
+   =====[ Details ]===================
+   ===================================
+*/
+
+.details {
+  display: flex;
+  padding: 4rem;
+  background-color: var(--color-grey-light-1);
+  border-bottom: var(--line);
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
+}
+
+/* ===================================
+   =====[ Description ]===============
+   ===================================
+*/
+
+.description {
+  font-size: 1.4rem;
+
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-light);
+  flex: 0 0 60%;
+  margin-right: 4rem;
+  padding: 3rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-right: 2rem;
+    padding: 2rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+/* ===================================
+   =====[ User reviews ]==============
+   ===================================
+*/
+
+.user-reviews {
+  flex: 1;
+  font-size: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
